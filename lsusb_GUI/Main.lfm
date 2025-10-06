@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 467
+  Height = 451
+  Top = 212
+  Width = 811
+  Caption = 'lsusb gui'
+  ClientHeight = 451
+  ClientWidth = 811
+  LCLVersion = '3.4.0.0'
+  object ednPID: TEditNum
+    Left = 214
+    Height = 28
+    Hint = 'PID'
+    Top = 2
+    Width = 80
+    BadColor = clRed
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    Text = '5704'
+  end
+  object btnGetDescruptors: TButton
+    Left = 4
+    Height = 28
+    Top = 2
+    Width = 115
+    Caption = 'Дескрипторы'
+    TabOrder = 1
+    OnClick = btnGetDescruptorsClick
+  end
+  object ednVID: TEditNum
+    Left = 124
+    Height = 28
+    Hint = 'VID'
+    Top = 2
+    Width = 80
+    BadColor = clRed
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    Text = '0483'
+  end
+  object btnClear: TButton
+    Left = 300
+    Height = 25
+    Top = 2
+    Width = 75
+    Caption = 'Очистка'
+    TabOrder = 3
+    OnClick = btnClearClick
+  end
+  object logm: TMemo
+    Left = 4
+    Height = 416
+    Top = 32
+    Width = 804
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Font.Height = -11
+    Font.Name = 'Noto Mono'
+    Font.Style = [fsBold]
+    Lines.Strings = (
+      'logm'
+    )
+    ParentFont = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 4
+    WordWrap = False
+  end
+end
